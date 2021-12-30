@@ -6,9 +6,9 @@ from mysql.connector import MySQLConnection
 
 def send_sms(to_number,message):
     print("message is : "+str(message))
-    account_sid = 'ACf2bf5733e418b7a53b050d5e581f1e24'
-    auth_token = 'f9e2e0478a7529d90304795117963c23'
-    twilio_number = "+19704103256"
+    account_sid = '###'
+    auth_token = '###'
+    twilio_number = "+###"
 
     client = Client(account_sid, auth_token)
     msg=client.messages.create(body=message,from_=twilio_number,to=to_number)
